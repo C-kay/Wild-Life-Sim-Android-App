@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/author"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.43"
+        tools:ignore="InefficientWeight">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="220dp"
+            android:text="@string/motto_we_no_dey_carry_last"
+            android:textAlignment="center"
+            android:textColor="@color/orange_rec"
+            android:textColorHighlight="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

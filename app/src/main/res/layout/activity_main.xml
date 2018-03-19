@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_home"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.ckobieyisi.myapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_weight="0.44"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="472dp"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/displaySpace"
+                    android:layout_width="273dp"
+                    android:layout_height="471dp"
+                    android:background="@android:color/black"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/dialogue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9.91"
+                    android:background="@android:color/holo_blue_light"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timeDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.21"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_weight="0.39"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32"
+            android:background="@drawable/start_round"
+            android:shadowColor="@android:color/black"
+            android:text="@string/start"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.47"
+            android:background="@drawable/stop_roud"
+            android:shadowColor="@android:color/black"
+            android:text="@string/stop"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

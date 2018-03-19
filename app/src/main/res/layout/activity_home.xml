@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_home"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/CanivoreText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.35"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="@string/number_of_canivores"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/HerbivoreText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.31"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="@string/number_of_herbivores"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/frameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.32"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="@string/number_of_frames"
+        android:inputType="number"
+        android:textColorHint="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/simulateButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/sim_round"
+        android:shadowColor="@android:color/black"
+        android:text="Simulate"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="ButtonStyle,HardcodedText"
+        android:layout_weight="0.11" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/helpButton"
+            android:layout_width="193dp"
+            android:layout_height="68dp"
+            android:background="@drawable/rounded_help"
+            android:elevation="0dp"
+            android:shadowColor="@android:color/black"
+            android:text="@string/help"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/aboutButton"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="@drawable/rounded_simulate"
+            android:elevation="0dp"
+            android:text="@string/about"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle"
+            tools:targetApi="lollipop" />
+    </LinearLayout>
+</LinearLayout>
